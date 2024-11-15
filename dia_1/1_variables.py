@@ -21,3 +21,5 @@ edad = 32
 casado = True
 # Float
 estatura = 1.82
+
+print(otro_enunciado)

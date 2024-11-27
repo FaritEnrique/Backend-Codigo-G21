@@ -63,3 +63,6 @@ SELECT * FROM alumnos WHERE matriculado = TRUE AND id < 3;
 
 -- Mostrara todos los alumnos que esten matriculados O su id sea menor que 3
 SELECT * FROM alumnos WHERE matriculado = TRUE OR id < 3;
+SELECT * FROM alumnos WHERE matriculado = TRUE OR id < 3;
+-- Devolver todos los alumnos que esten matriculados y que su fecha de nacimiento sea mayor que el 01-01-1995
+SELECT * FROM alumnos WHERE matriculado = True AND fecha_nacimiento > '1995-01-01';

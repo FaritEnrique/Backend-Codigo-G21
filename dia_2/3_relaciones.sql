@@ -41,7 +41,7 @@ SELECT avg(mantenimiento), tipo_moneda FROM cuentas GROUP BY tipo_moneda;
 
 
 -- El count sirve para contar los registros en base al group by y tambien se podria agregar una clausula WHERE
- SELECT tipo_moneda, count(tipo_moneda) FROM cuentas GROUP BY tipo_moneda;
+SELECT tipo_moneda, count(tipo_moneda) FROM cuentas GROUP BY tipo_moneda;
 
 -- Dame la cuenta que paga mas mantenimiento
 -- Usar la funcion max

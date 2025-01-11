@@ -1,0 +1,1 @@
+`npx prisma init` : Inicializar mi proyecto con prisma, esto creara la carpeta "_prisma_" y el archivo "_.env_" y si es que no hubiese el archivo "_.gitignore_" en el mismo lugar donde esta el proyecto

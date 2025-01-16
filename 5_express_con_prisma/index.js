@@ -29,6 +29,30 @@ servidor.post("/registro", async (req, res) => {
     }
 });
 
+servidor
+    .route("/notas")
+    .post(async (req, res) => {
+        const data = req.body;
+        try {
+            const notaCreada = await conexion.nota.create({data});
+            return res.json({
+                message: "Nota creada existosamente",
+                content: notaCreada
+            })
+        } catch (error) {
+            return res.json({
+                message: "Error al crear nota"
+            });
+        }
+    })
+    
+    .get(async (req, res) => {
+        const notas = await conexion.nota.findMany();
+        return res.json({
+            content: notas,
+        })
+    });
+
 servidor.listen(process.env.PORT, () => {
     console.log(`Servidor corriendo exitosamente en el puerto ${process.env.PORT}`
     );
